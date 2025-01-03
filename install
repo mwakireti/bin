@@ -13,8 +13,6 @@ ln -Fsv $DOTFILES/tmux/tmux.conf $HOME/.tmux.conf
 
 ln -Fsv $DOTFILES/.scripts/t $HOME/.local/bin/t
 
-ln -Fsv $DOTFILES/nvim $HOME/.config/nvim
-
 # add warp themes
 ln -Fsv $DOTFILES/warp $HOME/.warp
 
@@ -36,7 +34,7 @@ ln -s "${HOME}/bin/vim/plugins.vim" "${HOME}/.vim/plugins.vim"
 vim +PluginInstall +qall
 
 # set up nvim
-ln -Fsv "${HOME}/bin/nvim" "${HOME}/.config/nvim"
+ln -Fsv $HOME/bin/nvim $HOME/.config/nvim
 
 # link gitignore global
 ln -Fsv "${HOME}/bin/.gitignore" "${HOME}/.gitignore"

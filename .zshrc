@@ -109,27 +109,24 @@ export NVM_DIR="$HOME/.nvm"
 
 source ~/.config/envman/load.sh
 
-# Herd injected PHP binary.
-export PATH="/Users/mwamodo/Library/Application Support/Herd/bin/":$PATH
-export PHP_INI_SCAN_DIR="/Users/mwamodo/Library/Application Support/Herd/config/php/":$PHP_INI_SCAN_DIR
-
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
 
-# Herd injected PHP 8.0 configuration.
-export HERD_PHP_80_INI_SCAN_DIR="/Users/mwamodo/Library/Application Support/Herd/config/php/80/"
-
-# Herd injected PHP 8.2 configuration.
-export HERD_PHP_82_INI_SCAN_DIR="/Users/mwamodo/Library/Application Support/Herd/config/php/82/"
-
-# Herd injected PHP 8.1 configuration.
-export HERD_PHP_81_INI_SCAN_DIR="/Users/mwamodo/Library/Application Support/Herd/config/php/81/"
+# Herd injected PHP binary.
+export PHP_INI_SCAN_DIR="/Users/mwamodo/Library/Application Support/Herd/config/php/":$PHP_INI_SCAN_DIR
+export PATH="/Users/dan/Library/Application Support/Herd/bin/":$PATH
 
 # Herd injected PHP 8.3 configuration.
-export HERD_PHP_83_INI_SCAN_DIR="/Users/mwamodo/Library/Application Support/Herd/config/php/83/"
+export HERD_PHP_83_INI_SCAN_DIR="/Users/dan/Library/Application Support/Herd/config/php/83/"
 
 # Herd injected PHP 8.4 configuration.
-export HERD_PHP_84_INI_SCAN_DIR="/Users/mwamodo/Library/Application Support/Herd/config/php/84/"
+export HERD_PHP_84_INI_SCAN_DIR="/Users/dan/Library/Application Support/Herd/config/php/84/"
+
+# Herd injected PHP 8.2 configuration.
+export HERD_PHP_82_INI_SCAN_DIR="/Users/dan/Library/Application Support/Herd/config/php/82/"
+
+# Herd injected PHP 8.1 configuration.
+export HERD_PHP_81_INI_SCAN_DIR="/Users/dan/Library/Application Support/Herd/config/php/81/"
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 eval "$(twilio autocomplete:script zsh)"
